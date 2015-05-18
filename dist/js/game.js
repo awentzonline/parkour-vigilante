@@ -239,7 +239,7 @@ Play.prototype = {
     
     this.score = 0;
     this.scoreText = this.game.add.bitmapText(
-      this.lcdBounds.x + this.lcdBounds.width * 0.7, this.lcdBounds.y + this.lcdBounds.height * 0.1, 'font', '0000', 32
+      this.lcdBounds.x + this.lcdBounds.width * 0.7, this.lcdBounds.y + this.lcdBounds.height * 0.15, 'font', '0000', 32
     );
     this.scoreText.alpha = 0.5;
     this.gameOver = false;
