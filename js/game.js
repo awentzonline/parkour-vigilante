@@ -157,6 +157,17 @@ Boot.prototype = {
   },
   create: function() {
     this.game.input.maxPointers = 1;
+    if (this.game.device.desktop) {
+      this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+      this.scale.setMinMax(640, 542, 640, 542);
+      this.scale.pageAlignHorizontally = true;
+      this.scale.pageAlignVertically = true;
+    } else {
+      this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
+      this.scale.setMinMax(640, 542, 640, 542);
+      this.scale.pageAlignHorizontally = true;
+      this.scale.pageAlignVertically = true;
+    }
     this.game.state.start('preload');
   }
 };
@@ -235,7 +246,7 @@ function Play() {}
 Play.prototype = {
   create: function() {
     this.backgroundImage = this.game.add.image(0, 0, 'background');
-    this.lcdBounds = new Phaser.Rectangle(208, 125, 236, 178);
+    this.lcdBounds = new Phaser.Rectangle(205, 117, 240, 173);
     
     this.score = 0;
     this.scoreText = this.game.add.bitmapText(
