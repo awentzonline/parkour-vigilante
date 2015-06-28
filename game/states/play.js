@@ -9,7 +9,7 @@ function Play() {}
 Play.prototype = {
   create: function() {
     this.backgroundImage = this.game.add.image(0, 0, 'background');
-    this.lcdBounds = new Phaser.Rectangle(208, 125, 236, 178);
+    this.lcdBounds = new Phaser.Rectangle(205, 117, 240, 173);
     
     this.score = 0;
     this.scoreText = this.game.add.bitmapText(
