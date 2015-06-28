@@ -164,7 +164,7 @@ Boot.prototype = {
       this.scale.pageAlignVertically = true;
     } else {
       this.scale.scaleMode = Phaser.ScaleManager.SHOW_ALL;
-      this.scale.setMinMax(640, 542, 640, 542);
+      this.scale.setMinMax(320, 271, 640, 542);
       this.scale.pageAlignHorizontally = true;
       this.scale.pageAlignVertically = true;
     }
